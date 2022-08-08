@@ -73,3 +73,12 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color: black;
   }
+
+  @media only screen and (max-width: 600px) {
+    h1{
+        font-size: 40px; 
+    }
+    .search {
+        width: 80%;
+    }
+  }
