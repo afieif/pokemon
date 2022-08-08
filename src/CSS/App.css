@@ -1,0 +1,75 @@
+body{
+    color: black;
+    background-image: url('https://media.istockphoto.com/illustrations/night-starry-sky-dark-space-background-with-stars-illustration-id1370110270?k=20&m=1370110270&s=612x612&w=0&h=QernLlEbakU8o9HXAMVQTYNLjwIEkNZq7NFPhZY_BKs=');
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3c938f85-f834-4bb3-b3b2-97d295769464/d7zw1jq-8295d69e-eb5c-4574-b0fb-a245f61e548c.png');
+    background-size: 270px;
+    margin: 20px;
+    font-size: 20px;
+    height: 350px;
+    border-radius: 16px;
+    transition: 1s;
+}
+
+.name {
+    padding-top: 42px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    transition: 1s;
+}
+
+.card img {
+    padding-top: 35px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    padding: 15px;
+    border-radius: 18px;
+    border-style: none;
+    width: 30%;
+    margin: 20px 0px;
+    outline: none;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
