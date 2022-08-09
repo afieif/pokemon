@@ -12,13 +12,18 @@ function App() {
     .then((res)=>res.json())
     .then((data)=>setPokeList(data.results));
   }, [])
+
+  function search(pokemon){
+    return pokemon.name.includes(fltr.toLowerCase())
+  }
   
   return (
     <>
       <div className='content'>
       <h1>Pokemon Search</h1>
-      <input type='text' onChange={(e)=>setFilter(e.target.value)} value={fltr} className='search' placeholder='Search for a pokemon'/>
-      <List pokeList={pokeList.filter((p)=>p.name.includes(fltr.toLowerCase()))}/>
+      <input type='text' onChange={(e)=>setFilter(e.target.value)} value={fltr} 
+      className='search' placeholder='Search for Pokemon'/>
+      <List pokeList={pokeList.filter(search)}/>
       </div>
     </>
   );
